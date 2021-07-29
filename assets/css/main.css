@@ -25,6 +25,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+html{
+	scroll-behavior: smooth;
+}
 body {
 	line-height: 1;
 }
@@ -1789,10 +1792,6 @@ input, select, textarea {
 	header.major h2 {
 		font-size: 2em;
 	}
-	.myname{
-		color: #e31b6d;
-	}
-
 /* Form */
 
 	form {
@@ -2143,8 +2142,8 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
+				clip-path: circle();
+				width: 110px;
 			}
 
 /* List */
@@ -2555,20 +2554,20 @@ input, select, textarea {
 /* Work Item */
 
 	.work-item {
-		margin: 0 0 2em 0;
+		margin: 0 0 3em 0;
 	}
 
 		.work-item .image {
-			margin: 0 0 1.5em 0;
+			margin: 0 0 1em 0;
 		}
 
 		.work-item h3 {
 			font-size: 1em;
-			margin: 0 0 0.5em 0;
+			margin: 0 0 0.3em 0;
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 0.9em;
 			line-height: 1.5em;
 			margin: 0;
 		}
@@ -2592,7 +2591,7 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		background-color: #1c2826;
 		background-attachment: scroll,								scroll;
 		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
 		background-position: top left,							top left;
